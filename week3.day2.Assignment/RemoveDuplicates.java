@@ -8,6 +8,7 @@ public class RemoveDuplicates {
 	public static void main(String[] args) {
 		String text = "we learn java basics as part of java sessions in java week1";
 		String output = "";
+		System.out.println(text);
 		char[] charArray = text.toCharArray();
 		Set<Character> result = new TreeSet<Character>();
 		for (int i = 0; i < charArray.length; i++) {
@@ -15,6 +16,12 @@ public class RemoveDuplicates {
 				output=output+charArray[i];
 				System.out.print(charArray[i]);
 			}
+			else {
+				System.out.print(" ");
+			}
 		}
+
+
 	}
 }
+
