@@ -50,6 +50,12 @@ public class Myntra {
 		List<WebElement> Duke = driver.findElements(By.xpath("//div[@class='product-productMetaInfo']/h3[text()='Duke']"));
 		for (int i = 0; i <= Duke.size()-1; i++) {
 			System.out.println(Duke.get(i).getText());
+			if((Duke.get(i).getText()).contains("Duke")) {
+				System.out.println("Verification : All are from Duke");
+			}
+			else {
+				System.out.println("Verification : All are not from Duke");
+			}
 		}
 		driver.findElement(By.xpath("//label[text()='50% and above']")).click();
 		String text3 = driver.findElement(By.xpath("//span[@class='product-discountedPrice']")).getText();
