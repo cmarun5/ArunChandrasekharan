@@ -13,7 +13,7 @@ public class AssignIncidentUIChange extends ServiceNowBase{
 	public void setData() {
 		fileName="AssignIncidentUIChange";
 	}
-	@Test(dataProvider = "TestData")
+	@Test(dataProvider = "testData")
 	public void runAssignIncident(String group) throws InterruptedException {
 		Shadow shadow = new Shadow(driver);
 		shadow.setImplicitWait(10);
