@@ -13,7 +13,7 @@ public class CreateNewOption extends ServiceNowBase {
 	public void setData() {
 		fileName="CreateNewOption";
 	}
-	@Test(dataProvider = "TestData")
+	@Test(dataProvider = "testData")
 	public void runcreateNewOption(String shortdescrip) throws InterruptedException  {
 		Shadow shadow = new Shadow(driver);
 		shadow.setImplicitWait(5);
